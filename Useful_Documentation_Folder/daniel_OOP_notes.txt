@@ -1,0 +1,87 @@
+ <%= @chosenanswer.select{|x| x if x.question_id == ques.id && x if x.possible_answer_id == @chosenanswer.id}.count %>
+
+
+
+ <table border="1">
+<!-- list questions from survey -->
+<% Survey.questions.each do |ques| %>
+  <tr>
+
+  <td><p class="que"><strong><%= ques.text %></strong></p></td>
+  <td>Quescol</td>
+
+  </tr>
+  <!-- list possible answers for all questions in that survey -->
+  <% @survey.questions.find(ques).possible_answers.each do |posans|%>
+
+    <tr>
+      <td><p class="ans"><%= posans.text %></p></td>
+      <td>
+        <!-- tabulate all "votes" for this particular poss. answer -->
+        <%= puts "------============------------==============" %>
+        <%= p posans %>
+        <%= p posans.id %>
+        
+        
+      </td>
+    </tr>
+  <% end %>
+
+<% end %>
+
+</table>
+
+
+
+<% Survey.questions.each do |q_var| %>
+
+
+
+    def display
+    return "this is my name: " + self.title 
+  end
+
+  def questions
+    Question.where(survey_id: self.id)
+  end
+
+
+
+
+attr_reader :height
+
+def height
+  return @height
+end
+
+
+ChosenAnswer.select(|x| x if x.question_id == 1)
+
+
+
+ <% = @chosenanswer.select{|x| x if x.question_id == 2 && x if x.possible_answer_id == 2}.count %>
+
+
+
+ <%= @chosenanswer.select{|x| x if x.question_id == 2 && x if x.possible_answer_id == 2}.count %>
+
+
+ <%= @chosenanswer.select{|x| x if x.question_id == ques && x if x.possible_answer_id == 2}.count %>
+
+
+
+ <% @chosenanswer = posans.id %>
+
+ 
+
+# orangetreeone = OrangeTree.new()
+
+# orangetreeone.height
+
+# OrangeTree.height
+
+
+
+
+ 
+# survey.save!

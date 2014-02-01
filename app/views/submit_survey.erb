@@ -1,0 +1,28 @@
+<div class="container">
+
+<h1><%= @survey.title%></h1>
+
+<form action="/submit_survey" method="POST">
+	<input type="hidden" name="survey_id" value="<%=@survey.id%>">
+		<% @survey.questions.each do |question| %>
+		<p><%=question.text%></p><br><br>
+		<% question.possible_answers.each do |answer| %>
+		<input type="radio" name="answers[<%=answer.id%>]" value="<%=question.id%>"><%=answer.text%><br>
+		<!-- @survey.questions -->
+		<%end%>
+		<%end%>
+	
+
+	<!-- what do we do here?
+	where should we post to?
+	how to display survey questions,  -->
+
+
+	<input type="submit" name="Submit this survey">
+</form>
+</div>
+
+
+<!--   		t.integer :question_id 
+  		t.integer :user_id 
+  		t.integer :possible_answer_id -->

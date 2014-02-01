@@ -1,0 +1,40 @@
+<div class="container">
+<h1>Statistics</h1>
+
+<!-- Find survey -->
+<h2>Survey Title: <%= @survey.title %></h2>
+
+ <table id="statstable">
+    <!-- list questions from survey -->
+    <% @survey.questions.each do |question| %>
+      <tr>
+        <td id="left_column"><%= question.text %></td>
+        <td id="right_column">&nbsp;</td>
+      </tr>
+      <!-- list possible answers for all questions in that survey -->
+      <% @survey.questions.find(question.id).possible_answers.each do |possible_answer| %>
+      <tr>
+        <ol>
+        <td id="possibleanswer"><li><%= possible_answer.text %></li></td>
+        </ol>
+        <td>
+          <!-- tabulate all "votes" for this particular poss. answer -->
+          <% actualvotes = possible_answer.chosen_answers.count %>
+          <!-- calculate how many people voted for this question -->
+          <% totalvotes = question.chosen_answers.count %>
+          <!-- calculate percentage -->
+          <% percentage = (actualvotes.to_f / totalvotes.to_f)*100 %>
+          <!-- adjust bargraph length and color based on percentage -->
+          <script type="text/javascript">
+            bargraph.style.color="";
+          </script>
+          <div id="bargraph" style="width: <%= percentage*3 %>px;
+            background-color: rgb(<%= percentage.to_s %>%,50%,60%);">
+            &nbsp;<%= percentage %>%</div> 
+        </td>
+      </tr>
+      <% end %>
+    <% end %>
+</table>
+
+</div>

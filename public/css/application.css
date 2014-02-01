@@ -1,0 +1,245 @@
+/* =========== Custom CSS Below ============== */
+body {
+  background-color: Gray;
+  color: DimGray;
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto 0px auto;
+  padding: 30px;
+  background: White;
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 100;
+  font-size: 200px;
+  color: LightGray;
+  letter-spacing: 0px;
+  font-size: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container h2 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 700;
+  font-size: 200px;
+  color: Gray;
+  letter-spacing: 0px;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+.container li {
+  text-align: center;
+
+}
+.container li a {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 700;
+  font-size: 60px;
+  color: Gray;
+  letter-spacing: 0px;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+.container li a:hover {
+  color: DeepPink;
+}
+
+th {
+  text-align: left;
+}
+
+.header {
+  height: 250px;
+  display: block;
+  background: rgb(151, 148, 113);
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header #brand a{
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 100;
+  font-size: 200px;
+  color: White;
+  letter-spacing: -25px;
+}
+
+.header #brand a:hover {
+  text-decoration: none;
+  color: DeepPink;
+}
+
+
+.header #login_logout a{
+  color: white;
+  background: clear;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 15px 10px 15px;
+
+  border-radius:10px;
+
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 100;
+  font-size: 30px;
+
+}
+
+.header #login_logout a:hover{
+  background: MidnightBlue;
+}
+
+.homecontent {
+  display: inline-block
+  vertical-align: top;
+  width: 100%;
+  height: 0px;
+  background: white;
+  text-align: center;
+}
+
+.loginform {
+  display: none;
+  padding: 40px;
+  /*padding: 50px 0px 50px 0px;*/
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 400;
+  font-size: 70px;
+  color: gray;
+  letter-spacing: 0px;
+  font-size: 30px;
+
+  background: white;
+}
+
+.makeasurvey {
+  padding: 40px;
+  /*padding: 50px 0px 50px 0px;*/
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 400;
+  font-size: 70px;
+  color: gray;
+  letter-spacing: 0px;
+  font-size: 30px;
+
+  background: white;
+}
+
+.center {
+  text-align: center;
+}
+
+#textfield {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+}
+
+#loginbutton {
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  width: 373px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  color: gray;
+}
+
+.container #statstable {
+  width: 900px;
+  margin: auto;
+  font-size: 20px;
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container #statstable td {
+  /*border-style: solid;*/
+  border-width: 1px;
+  border-bottom-style:solid;
+  border-color: LightGray;
+  height: 50px;
+}
+
+#left_column {
+  width: 600px;
+  color: rgb(151, 148, 113);
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+#right_column {
+  width: 300px;
+}
+
+#possibleanswer {
+  padding-left: 40px;
+}
+
+#bargraph {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+  width: 10px;
+  margin: auto 0px auto 0px;
+  color: white;
+  /*background-color: LightBlue;*/
+}
+
+#userportal {
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 400;
+  /*font-size: 150px;*/
+  letter-spacing: 0px;
+  font-size: 90px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#userportal a{
+  color: Gray;
+  text-decoration: none;
+}
+
+#userportal a:hover{
+  color: DeepPink;
+}
+
+.footer {
+  height: 100px;
+  padding: 30px 0px 30px 0px;
+  background: gray;
+  text-align: center;
+  
+  font-family: 'Josefin Sans', sans-serif;
+  /* Available font weights: 100, 400, and 700 */
+  font-weight: 200;
+  font-size: 20px;
+  color: White;
+  letter-spacing: 0px;
+  font-size: 30px;
+
+}

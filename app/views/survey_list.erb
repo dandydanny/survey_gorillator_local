@@ -1,0 +1,10 @@
+<div class="container">
+<h1>Survey List</h1>
+
+<% surveys = Survey.all %> 
+<ul>
+<% surveys.each do |survey| %>
+	<li><a href="/take_survey/<%= survey.id %>"><%= survey.title.upcase %></a></li><br>
+<% end %>
+</ul>
+</div>

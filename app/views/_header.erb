@@ -1,0 +1,15 @@
+<div class="header">
+  <div id="brand">
+    <a href="/user_portal">GORILLATOR</a>
+  </div>
+    
+  <div id="login_logout">
+    <% if session[:user_id] %>  
+    <%= erb :_logout %>  
+    <% else %>
+    <%= erb :_login %>
+    <% end %>
+  </div>
+</div>
+
+

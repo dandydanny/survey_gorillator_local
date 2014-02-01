@@ -1,0 +1,16 @@
+<div class="container"
+
+<h1>create question for survey <%=params[:id]%></h1>
+
+<form action="/create_question" method="POST">
+
+Question: <input type="text" name="text">
+	<% @possible_answer.each do |answer| %>
+	<input type="radio" name="answers[<%=answer.text%>]" value="question_id"><%=answer.text%><br>
+	<%end%>
+
+	<input type="hidden" value="">
+	<input type="submit" name="Submit this survey" value="submit this question">
+</form>
+
+</div>

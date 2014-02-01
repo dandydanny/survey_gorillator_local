@@ -1,0 +1,6 @@
+    $(".homecontent").animate({height:"100%"});
+    $(".loginform").show("slide");
+
+    <%= question.chosen_answers.count %> ||
+
+    <%= possible_answer.chosen_answers.count %>|

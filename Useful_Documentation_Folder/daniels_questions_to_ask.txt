@@ -1,0 +1,11 @@
+Questions:
+
+Trying to checkout remote working branch, but instead, "git checkout -b working" created a working branch locally instead. why?
+
+How to we have sublime refresh, perhaps automatically, to show us the newly added folder and files?
+
+How to setup my friggin windows machine / hackintosh to run stuff we need? (rake console, bundle)
+
+What is the benefit of using <label> tag in conjunction with the form input elements? Can't I just do normal <p> or inline?
+
+After commiting stuff to your personal branch, how to merge / pull to working?
